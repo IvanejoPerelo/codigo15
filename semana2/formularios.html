@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Registro de usuarios</h1>
+
+    <form action="" method="">
+       <!--
+        Forma antigüa de hacerlo
+        <label for="">
+            Nombre
+            <input type="text">
+        </label>
+        -->
+        <p>
+        <input type="text" placeholder="Nombres" name="nombre"/>
+        </p>
+        <p>
+            <input type="text" placeholder="Apellido" name="apellido"/>
+        </p>
+        <p>
+            <input type="email" placeholder="E-mail" name="email"/>
+        </p>
+        <p>
+            <input type="date" placeholder="Fecha de nacimiento" name="fecha_de_nacimiento" />
+        </p>
+        <p>
+            <input type="number" placeholder="Ingresa tu DNI" name="dni"/>
+        </p>
+        <p>
+            <input type="tel" placeholder="Telefono" name="telefono"/>
+        </p>
+        <p>
+            <input type="password" placeholder="Ingrese su contraseña" name="contraseña"/>
+        </p>
+        <p>
+            <p>Genero</p>
+            <p>
+                <label for="">
+                    Masculino
+                    <input type="radio" name="genero"/>
+                </label>
+            </p>
+            <p>
+                <label for=""><!--en los radios si debe ir el value porque cuando se envíe al servidor se enviará el value-->
+                    Femenino
+                    <input type="radio" name="genero" value="masculino"/>
+                </label>
+            </p>
+            <p> <!-- esta etiqueta: <p aria-label="Genero"> es para accesibilidad, para personas con discapacidades, esta etiqueta lee la web-->
+                <label for="">
+                    Otro
+                    <input type="radio" name="genero" id="" value="femenino"/>
+                </label>
+            </p>
+            <p>
+                Paises
+            </p>
+            <select name="" id="">
+                <option value="Peru">Perú</option> <!--en el value se llena lo que se enviará al servidor-->
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+            </select>
+            <p>
+                Ciudades
+            </p>
+            <select name="" id="">
+                <option value="" disabled selected>Paises</option><!--Para que salga la palabra paises y no se pueda seleccionar-->
+                <option value="Lima">Lima</option>
+                <option value="Chiclayo">Chiclayo</option>
+                <option value="Piura">Piura</option>
+                <option value="Morrope">Morrope</option>
+                <option value="Ferreñafe">Ferreñafe</option>
+            </select>
+            <p>
+                Cursos
+            </p>
+            <p>JavaScript <input type="checkbox" name="curso_1" /></p>
+            <p>HTML <input type="checkbox" name="curso_2" /></p>
+            <p>CSS <input type="checkbox" name="curso_3" /></p>
+            <p>React JS <input type="checkbox" name="curso_4" /></p>
+            <p>Next JS <input type="checkbox" name="curso_5" /></p>
+        </p>
+        <input type="text" value="Peru" readonly><!--esto sólo está para lectura, no permite editar pero si se envía al servidor-->
+        <!--a diferencia del disable que sólo se muestra pero no se envía al servidor-->
+        <!--así se hacía antes<input type="submit">-->
+        <button type="submit">Enviar</button> <!--cuando el botón está dentro de las etiquetas form (formulario) por defecto es tipo submit (si no se pondría el submit lo asumiría)-->
+    </form>
+        <!--el button fuera de la etiqueta form asume el tipo button por defecto-->
+    
+</body>
+</html>
