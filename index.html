@@ -1,79 +1,147 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- es = para especificar el lenguaje de la página-->
-    <head>
-        <meta charset="utf-8">
-        <title>mi primera página web</title>
-        <!--Etiquetas para el SEO--><!--protocolo opengraft: ogp.me/#types-->
-        <meta 
-            property="og:title" 
-            content="Iván Pérez (Ivanejo)- Mi portafolio web" 
-        />
-        <meta 
-            property="og:description" 
-            content="Este es mi primer portafolio web, donde subiré todos mis proyectos" 
-        />
-        <meta 
-            property="og:image" 
-            content="https://static.independent.co.uk/s3fs-public/thumbnails/image/2012/04/26/18/Untitled-5.jpg?width=1200" 
-        />
-        <meta 
-            property="og:type"
-            content="website"
-        />
-        <meta
-            name="keywords"
-            content="Ivanejo, JavaScript, Tecsup, Codigo, Full Stack"
-        />
-    </head>
-    <body>
-        <a href="./galeria.html">Galeria de redes sociales</a>
-        <h1>Mi primer titulo</h1>
-        <h2>Mi primer titulo</h2>
-        <h3>Mi primer titulo</h3>
-        <h4>Mi primer titulo</h4>
-        <h5>Mi primer titulo</h5>
-        <h6>Mi primer titulo</h6>
-        <p> 
-            <strong>
-                <i>
-                    <u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magnam dolorem itaque enim, voluptate necessitatibus consequuntur harum quaerat! Saepe iste veniam vel quibusdam nam fugiat veritatis cupiditate nulla. Sint, tempore.
-                    </u>
-                </i>
-            </strong>
-            </p>
-        <img src="https://es.web.img3.acsta.net/newsv7/19/03/20/09/39/2506394.jpg" alt="los vengadores" width="200px" height="100px">
-        <img src="./images/th.jpg" alt="" width="250" height="200">
-        <!--Contenedor-->
-        <!--<div style="border: solid; display: flex; justify-content: center;">
-
-        </div>-->
-        <div style="border: solid;">
-            <hi style="border: solid blue;">Mi primer div</hi>
-            <p style="border: solid violet;">Esto es un párrafo</p>
-            <img style="border: solid green" src="./th.jpg" alt="PROBANDO" width="100">
-            <img src="./images/th.jpg" alt="PROBANDO" width="100">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+        property="og:title" 
+        content="Iván Pérez (Ivanejo)- Mi portafolio web" 
+    />
+    <meta 
+        property="og:description" 
+        content="Este es mi primer portafolio web, donde subiré todos mis proyectos" 
+    />
+    <meta 
+        property="og:image" 
+        content="https://static.independent.co.uk/s3fs-public/thumbnails/image/2012/04/26/18/Untitled-5.jpg?width=1200" 
+    />
+    <meta 
+        property="og:type"
+        content="website"
+    />
+    <meta
+        name="keywords"
+        content="Ivanejo, JavaScript, Tecsup, Codigo, Full Stack"
+     />
+    <title>Mi Portafolio web</title>
+</head>
+<style>
+    *{
+        background-color: #111827;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <p>✌️Hola soy</p>
+            <h1>Iván</h1>
+            <p>Desarrollador web</p>
         </div>
-        <section>
+        <div>
+            <img src="./images/landing/coding.svg" alt="">
+        </div>
+    </section>
+    <section>
+        <h2>Proyectos</h2>
+        <div>
             <div>
-                <a 
-                    href="https://facebook.com"
-                    style="border: solid"
-                    target="_blank" 
-                > <!-- "_blank" abre lo que pusimos en la etiqueta a en una pestaña nueva-->
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Fenlace_1063309&psig=AOvVaw1IFUTTL5dOl0gXT_lWYcEC&ust=1691513805385000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJin1I-Cy4ADFQAAAAAdAAAAABAS" 
-                    alt="" 
-                    width="20px"
-                    />
-                    Facebook
-                </a>
-
+                <img src="./images/projects/mailbox.svg" alt="">
+                <img src="./images/projects/viajes.svg" alt="">
             </div>
-        </section>
-
-        <!--Galería de Redes sociales-->
-
-        <section>
-
-        </section>
-    </body>
+            <div>
+                <img src="./images/projects/todolist.svg" alt="">
+                <img src="./images/projects/json.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Habilidades</h2>
+        <div>
+            <span>
+                <img src="./images/techs/docker.svg" alt="">
+                Docker
+            </span>
+            <span>
+                <img src="./images/techs/html.svg" alt="">
+                HTML
+            </span>
+            <span>
+                <img src="./images/techs/typescript.svg" alt="">
+                typescript
+            </span>
+            <span>
+                <img src="./images/techs/mongodb.svg" alt="">
+                mongodb
+            </span>
+        </div>
+        <div>
+            <span>
+                <img src="./images/techs/git.svg" alt="">
+                git
+            </span>
+            <span>
+                <img src="./images/techs/css.svg" alt="">
+                css
+            </span>
+            <span>
+                <img src="./images/techs/reactjs.svg" alt="">
+                reactjs
+            </span>
+            <span>
+                <img src="./images/techs/mysql.svg" alt="">
+                mysql
+            </span>
+        </div>
+        <div>
+            <span>
+                <img src="./images/techs/figma.svg" alt="">
+                figma
+            </span>
+            <span>
+                <img src="./images/techs/tailwint.svg" alt="">
+                tailwint 
+            </span>
+            <span>
+                <img src="./images/techs/vue.svg" alt="">
+                vue
+            </span>
+            <span>
+                <img src="./images/techs/pgsql.svg" alt="">
+                pgsql
+            </span>
+        </div>
+        <div>
+            <span>
+                <img src="./images/techs/node-js.svg" alt="">
+                node-js
+            </span>
+            <span>
+                <img src="./images/techs/javascript.svg" alt="">
+                javascript
+            </span>
+            <span>
+                <img src="./images/techs/nestjs.svg" alt="">
+                nestjs
+            </span>
+        </div>
+    </section>
+    <section>
+        <h2>Contacto</h2>
+        <div>
+            <img src="./images/contacts/Linkedin.svg" alt="">
+            <img src="./images/contacts/GitHub_1.svg" alt="">
+            <img src="./images/contacts/outlook.svg" alt="">
+        </div>
+    </section>
+</body>
 </html>
