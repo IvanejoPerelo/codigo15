@@ -1,0 +1,89 @@
+<!--
+    abrir la terminal: CTRL + Ñ
+    cerrar la tterminal: CTRL + J
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo CSS</title>
+    <link rel="stylesheet" href="./styles.css"><!--para vincular el archivo css-->
+    <!---Tambiém se puede utilizar poniendo la etiqueta style (No recomendado):
+    <style>
+        body{
+            background-color:aquamarine;
+        }semana2/dia 2/styles.css
+    </style>
+    -->
+</head>
+<body> 
+    <!--Tambien se puede agregar como atributo, se le llama estilos embebidos (no recomendado porque reemplazaría lo establecido en el archivo.css)
+    <p style="font-size: 30px;">Soy un texto</p>
+    -->
+    <h1>Utilizando el selector por elemento</h1>
+    <h3 class="selector_clase">Utilizando el selector por clase</h3>
+    <p id="selector_id">Utiliazando el selector por id</p>
+
+    <!--Pseudo Clases-->
+    <h2>Pseudo Clases</h2>
+    <button>Boton con :hover</button>
+    <div class="pseudo_clase_hover">
+        Hola este es un div con :hover
+    </div>
+    <a class="pseudo_clase_link_hover" href="">Este es un link con :hover</a>
+    <input type="text">
+
+    <h2>Hijos</h2>
+    <div class="hijos_pseudo"> <!--Para que funcione la clase hijos deben estar dentro de un padre, que sería el div-->
+        <p class="p">Párrafo 1</p>
+        <p class="p">Párrafo 2</p>
+        <p class="p">Párrafo 3</p>
+        <p class="p">Párrafo 4</p>
+        <p class="p">Párrafo 5</p>
+        <p class="p">Párrafo 6</p>
+    </div>
+    <!--Pseudo elementos (se utilizan ::)-->
+    <h2>::before</h2>
+    <div class="prueba_before">before</div>
+    <h2>::after</h2>
+    <div class="prueba_after">after</div>
+    <h2>::firt letter</h2>
+    <p class="prueba_first_letter">Hola, soy un párrafo</p>
+
+    <!-- Pseudo clase de validación: CSS de validación-->
+    <form action="">
+        <input class ="input1" type="text" placeholder="caja de texto">
+        <input class ="input1" type="text" placeholder="caja de texto" required>
+        <input type="submit">
+    </form>
+
+    <!--Selectores combinados y múltiples-->
+    <div class="padre">
+        <ul>
+            <li>Item 1</li>
+            <li class="selecciona_este_li">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <!--herencia-->
+        <h2>Herencia</h2>
+        <div class="container">
+            <p>párrafo padre</p>
+            <div class="child">
+                <p>párrafo hijo</p>
+            </div>
+        </div>
+    </div>
+    <!--Cascada-->
+    <h2>Cascada</h2>
+    <div class="mi_parrafo">mi párrafo</div>
+    <!--Unidades de medida-->
+    <h2>Unidades de medida</h2>
+    <div class="caja_1">Caja 1</div>
+    <div class="caja_2">Caja 2
+        <div class="caja_3">Caja 3</div>
+    </div>
+</body>
+</html>

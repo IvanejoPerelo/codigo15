@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+}
+.margin_top15{
+    margin-top: 15px;
+}
+.margin_button15{
+    margin-bottom: 15px;
+}
+.font_size{
+    font-size: 12px;
+}
+.color_blanco{
+    color:#ffffffff
+}
+.container{
+    display: flex;
+    align-items: center;/*alineación vertical*/
+    justify-content: center;/*alineación horizontal*/
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+.container_2{
+    width: 100%;
+    /* color: #ffffffff; */
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 10px;
+}
+.container_3{
+    display: flex;
+    justify-content: left;/*alineación horizontal*/
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 15px;
+}
+.box{
+    background-color: hsl(216, 50%, 16%);
+    padding: 16px;
+    border-radius: 25px;
+    width: 17%;
+    text-align:left;
+}
+.box_2{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 100%;
+    border-radius: 16px;
+}
+.title{
+    font-size: 14px;
+    font-weight: 600;
+}
+.p1{
+    font-weight: 100;
+}
+.p2{
+    color: aqua;
+    font-weight: 600;
+}
+.p3{
+    font-weight: 600;
+    margin-left: 5px;
+}
+.img_chicas_1{
+    margin-right: 8px;
+    height: 12px;
+}
+.img_chicas_2{
+    height: 20px;
+    border: 1px solid #ffffffff;
+    border-radius: 100px;
+    margin-right: 10px; 
+}

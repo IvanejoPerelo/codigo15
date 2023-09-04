@@ -1,0 +1,28 @@
+*{ /* el * es para decir toda la página web */
+    margin: 0;
+    padding: 0;
+}
+section{
+    display: flex;
+    /* al usar display:flex activamos elementos: */
+    justify-content: center; /*alinea elementos de forma horizotal*/
+    /*justify-content: space-arrow es con espacio inicial y final ...  space-evenly; espacio final e inicial y los de enmedio del mismo tamaño
+    center ... end ... star */
+    align-items: center;/*Alinea elementos de forma vertical*/
+    height: 100vh;
+    /*vh = viewport hight para ocupar el espacio de la pantalla*/
+    border: solid red;
+    /*
+    justify para horizontal
+    align para vertical
+    */
+}
+div{
+    border: solid;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
